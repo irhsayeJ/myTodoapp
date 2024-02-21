@@ -14,6 +14,7 @@ function TextArea(props) {
   function handleSubmit(event) {
     props.onAdd(note);
     event.preventDefault();
+    setNote({ title: "", content: "" });
   }
   return (
     <div className="textArea">

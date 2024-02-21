@@ -93,6 +93,22 @@ body {
 }
 .deleteButton {
   border: none;
-  position: relative;
-  float: right;
+}
+
+.completed {
+  border: none;
+  padding: 0;
+}
+.note-p,
+.note-p-id .note-h1 {
+  margin: 0;
+  padding-bottom: 0;
+}
+.note-h1 {
+  font-size: 1.2em;
+  display: inline;
+}
+.note-p-id {
+  font-weight: bolder;
+  display: inline;
 }
