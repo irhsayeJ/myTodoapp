@@ -12,15 +12,30 @@ function App() {
   function addNote(note) {
     setNotes((prevNotes) => [...prevNotes, note]);
   }
+  function deleteNote(id) {
+    setNotes(() => {
+      return notes.filter((noteitem, index) => {
+        return index !== id;
+      });
+    });
+  }
 
   return (
-    <div className="app-container">
+    <div>
       <Header />
       <TextArea onAdd={addNote} />
       <div className="div-notes">
-        {notes.map((noteitem, index) => (
-          <Note key={index} title={noteitem.title} content={noteitem.content} />
-        ))}
+        {notes.map((noteitem, index) => {
+          return (
+            <Note
+              key={index}
+              id={index}
+              title={noteitem.title}
+              content={noteitem.content}
+              onDelete={deleteNote}
+            />
+          );
+        })}
       </div>
       <Footer />
     </div>

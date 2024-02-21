@@ -58,30 +58,29 @@ body {
 }
 .note {
   background-color: #efe4fe;
-
-  border-radius: 3%;
-  padding: 3% 2%;
-  border: 2px solid black;
+  white-space: pre-wrap;
   word-wrap: break-word;
-  width: 120px;
-  height: 150px;
-  float: left;
-  margin: 2%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  border-radius: 3%;
+  padding: 2% 1%;
+  border: 2px solid black;
+  margin-bottom: 3%;
+  word-wrap: break-word;
+  max-width: 200px; /* Set maximum width */
+  width: fit-content; /* Ensure notes occupy full width within their container */
 }
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Make sure the container takes at least the full height of the viewport */
-}
-
 .div-notes {
-  flex-grow: 1; /* Expand to fill remaining space */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  column-gap: 2%;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .footer {
-  /* Your existing footer styles */
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -91,4 +90,9 @@ body {
   font-style: normal;
 
   padding: 10px;
+}
+.deleteButton {
+  border: none;
+  position: relative;
+  float: right;
 }
