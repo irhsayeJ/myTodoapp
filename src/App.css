@@ -1,14 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poiret+One&display=swap");
 body {
   background-image: url(../public/images/backgroundImage.jpg);
   background-size: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
+
+.header {
+  background-color: #e7def4;
+  color: black;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
   width: 100%;
 }
-.Header {
-  background-color: white;
-  color: #e7def4;
+.header-h1 {
+  position: relative;
+  display: inline-block;
+  left: 2%;
+}
+.header-icon {
+  position: relative;
+  left: 2%;
+}
+.textArea-form {
+  position: relative;
+  margin: 60px auto 20px auto;
+  width: 55%;
+  background-color: #efe4fe;
+  padding: 2%;
+  border-radius: 7px;
+  border: 3px solid black;
+}
+.form-input,
+.form-textArea {
+  width: 100%;
+  border: none;
+  font-family: "Indie Flower", cursive;
+  resize: none;
+  font-weight: 400;
+  padding: 1%;
+  font-size: 1.2em;
+  align-items: center;
+  box-sizing: border-box;
+}
+.form-input {
+  font-weight: bold;
+}
+.form-button {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.note {
+  background-color: #efe4fe;
+
+  border-radius: 3%;
+  padding: 3% 2%;
+  border: 2px solid black;
+  word-wrap: break-word;
+  width: 120px;
+  height: 150px;
+  float: left;
+  margin: 2%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the container takes at least the full height of the viewport */
+}
+
+.div-notes {
+  flex-grow: 1; /* Expand to fill remaining space */
+}
+
+.footer {
+  /* Your existing footer styles */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  padding: 10px;
 }
