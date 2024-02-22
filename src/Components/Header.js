@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="header">
       <LightbulbIcon className="header-icon" />
-      <h1 className="header-h1">todoapp</h1>
+      <h1 className="header-h1">myTodoapp</h1>
     </div>
   );
 }
