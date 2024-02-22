@@ -58,7 +58,7 @@ body {
 }
 .note {
   background-color: #efe4fe;
-  display: inline-block;
+  /*display: inline-block;*/
   white-space: pre-wrap;
   word-wrap: break-word;
   border-radius: 3%;
@@ -66,13 +66,20 @@ body {
   border: 2px solid black;
   margin-bottom: 3%;
   max-width: 200px;
+
   /* Set maximum width */
-  width: 100%; /* Ensure notes occupy full width within their container */
+  width: fit-content; /* Ensure notes occupy full width within their container */
 }
 .div-notes {
-  column-count: 4;
+  /*column-count: 4;
   margin: 2em 2em 2em 2em;
-  column-width: 25%;
+  column-width: 25%;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 2%;
+  column-gap: 2%;
+  margin: 0 10%;
 }
 
 .footer {
