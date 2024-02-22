@@ -65,8 +65,8 @@ body {
   padding: 2% 1%;
   border: 2px solid black;
   margin-bottom: 3%;
-  word-wrap: break-word;
-  max-width: 200px; /* Set maximum width */
+
+  /* Set maximum width */
   width: 100%; /* Ensure notes occupy full width within their container */
 }
 .div-notes {
