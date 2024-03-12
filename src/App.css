@@ -4,6 +4,7 @@ body {
   background-size: auto;
   margin: 0;
   padding: 0;
+  position:relative;
   box-sizing: border-box;
 }
 
@@ -83,7 +84,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
